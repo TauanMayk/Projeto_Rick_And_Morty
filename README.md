@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# 🌌 Rick and Morty API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto em React que consome a [Rick and Morty API](https://rickandmortyapi.com/) para exibir informações sobre personagens e cidades do universo da série. Desenvolvido com TypeScript e Vite, este app oferece recursos de busca, filtragem por espécie e modo escuro/claro.
 
-Currently, two official plugins are available:
+## 🖼️ Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot_58](https://github.com/user-attachments/assets/5d5100d6-e935-483a-889e-6f5dae80b292)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Listagem de personagens com nome, espécie e imagem
+- Filtro por espécie (ex: Human, Alien)
+- Campo de busca por nome
+- Exibição das cidades (localizações) do universo
+- Tema escuro/claro com alternância
+- Lightbox para imagens em destaque
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Tecnologias utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [fslightbox-react](https://fslightbox.com/react)
+- [Rick and Morty API](https://rickandmortyapi.com/)
+- ESLint
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📷 Créditos das imagens
+
+As imagens dos personagens e cidades são fornecidas pela API oficial de Rick and Morty.
+
+## 📄 Licença
+
+Este projeto é open-source e pode ser usado livremente. Sinta-se à vontade para contribuir!
